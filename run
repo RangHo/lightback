@@ -1,0 +1,9 @@
+#!/bin/sh
+
+[ -r conf ] && . ./conf
+
+if [ -r /var/tmp/lightback ]; then
+    [ -w "${DEVICE}/brightness" ] && cat /var/tmp/lightback > "${DEVICE}/brightness"
+fi
+
+exec chpst -b lightback pause

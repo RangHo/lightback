@@ -1,0 +1,1 @@
+DEVICE="$(find /sys/class/backlight -mindepth 1 | head -n 1)"

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+[ -r conf ] && . ./conf
+
+if [ -w /var/tmp/lightback ] || [ ! -e /var/tmp/lightback ]; then
+    [ -r "${DEVICE}/brightness" ] && cat "${DEVICE}/brightness" > /var/tmp/lightback
+fi
