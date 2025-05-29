@@ -1,5 +1,5 @@
 NAME=lightback
-DESTDIR=/var/service
+DESTDIR=/etc/sv
 
 install:
 	install -d $(DESTDIR)/$(NAME)
