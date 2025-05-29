@@ -1,14 +1,14 @@
 NAME=lightback
-DESTDIR=/etc/sv
+SVDIR=/etc/sv
 
 all:
 	@echo "Nothing to build."
 
 install:
-	install -d $(DESTDIR)/$(NAME)
-	install -m 755 -t $(DESTDIR)/$(NAME) run finish conf
+	install -d $(SVDIR)/$(NAME)
+	install -m 755 -t $(SVDIR)/$(NAME) run finish conf
 
 uninstall:
-	rm -rf $(DESTDIR)/$(NAME)
+	rm -rf $(SVDIR)/$(NAME)
 
 .PHONY: install uninstall
