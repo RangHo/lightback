@@ -2,7 +2,6 @@
 pkgname=lightback
 version=1.1.0
 revision=1
-build_style=meta
 short_desc="Backlight persistence service"
 maintainer="RangHo Lee <hello@rangho.me>"
 license="WTFPL"
