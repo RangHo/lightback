@@ -7,6 +7,6 @@ maintainer="RangHo Lee <hello@rangho.me>"
 license="WTFPL"
 homepage="https://github.com/RangHo/lightback"
 
-post_install() {
+do_install() {
 	vsv lightback
 }
